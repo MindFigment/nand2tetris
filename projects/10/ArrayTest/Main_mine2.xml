@@ -1,0 +1,286 @@
+<class>
+<keyword> class </keyword>
+<defined subroutine> Main </defined subroutine>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<defined subroutine> main </defined subroutine>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<subroutine> Array </subroutine>
+<defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> a </defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> ; </symbol>
+</varDec>
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> ; </symbol>
+</varDec>
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> , </symbol>
+<defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> sum </defined var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> ; </symbol>
+</varDec>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used subroutine> Keyboard </used subroutine>
+<symbol> . </symbol>
+<used subroutine> readInt </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<used stringConstant> HOW MANY NUMBERS?  </used stringConstant>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> a </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used subroutine> Array </used subroutine>
+<symbol> . </symbol>
+<used subroutine> new </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used integerConstant> 0 </used integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> a </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> [ </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<used subroutine> Keyboard </used subroutine>
+<symbol> . </symbol>
+<used subroutine> readInt </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<used stringConstant> ENTER THE NEXT NUMBER:  </used stringConstant>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> + </symbol>
+<term>
+<used integerConstant> 1 </used integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used integerConstant> 0 </used integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> sum </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used integerConstant> 0 </used integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> sum </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> sum </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> + </symbol>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> a </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> [ </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+<symbol> = </symbol>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> i </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> + </symbol>
+<term>
+<used integerConstant> 1 </used integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<doStatement>
+<keyword> do </keyword>
+<used subroutine> Output </used subroutine>
+<symbol> . </symbol>
+<used subroutine> printString </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<used stringConstant> THE AVERAGE IS:  </used stringConstant>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<used subroutine> Output </used subroutine>
+<symbol> . </symbol>
+<used subroutine> printInt </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> sum </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+<symbol> / </symbol>
+<term>
+<used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>> length </used var <bound method SymbolTable.index_of of <symbol_table.SymbolTable object at 0x7feca61fb790>>>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<used subroutine> Output </used subroutine>
+<symbol> . </symbol>
+<used subroutine> println </used subroutine>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

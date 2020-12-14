@@ -1,0 +1,522 @@
+(Sys.init) // HANDLING FUNCTION
+	@SP
+	D=M
+	A=D
+	M=0
+	@SP
+	M=D
+	@4000
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THIS
+	M=D
+	@5000
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THAT
+	M=D
+	@return_address-0
+	D=A
+	@SP
+	A=M
+	M=D // save return-address on the stack
+	@SP
+	M=M+1 // update the stack
+	@LCL
+	D=M
+	@SP
+	A=M
+	M=D // save LCL of the calling function
+	@SP
+	M=M+1
+	@ARG
+	D=M
+	@SP
+	A=M
+	M=D // save ARG of the calling function
+	@SP
+	M=M+1
+	@THIS
+	D=M
+	@SP
+	A=M
+	M=D // save THIS of the calling function
+	@SP
+	M=M+1
+	@THAT
+	D=M
+	@SP
+	A=M
+	M=D // save THAT of the calling function
+	@SP
+	M=M+1
+	@5
+	D=A
+	@SP
+	D=M-D
+	@ARG
+	M=D // Reposition ARG (SP-num_args-5)
+	@SP
+	D=M
+	@LCL
+	M=D // Reposition LCL (LCL = SP)
+	@Sys.main
+	0;JMP // Transfer control (goto f)
+(return_address-0) // Declare label for the return-address
+	@R1
+	D=A
+	@R5
+	A=A+D
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M-1
+	@SP
+	A=M
+	D=M
+	@SP
+	A=M+1
+	A=M
+	M=D
+(Sys.init$LOOP)
+	@Sys.init$LOOP
+	0;JMP
+(Sys.main) // HANDLING FUNCTION
+	@SP
+	D=M
+	A=D
+	M=0
+	D=D+1
+	A=D
+	M=0
+	D=D+1
+	A=D
+	M=0
+	D=D+1
+	A=D
+	M=0
+	D=D+1
+	A=D
+	M=0
+	@SP
+	M=D
+	@4001
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THIS
+	M=D
+	@5001
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THAT
+	M=D
+	@200
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R1
+	D=A
+	@LCL
+	A=M+D
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M-1
+	@SP
+	A=M
+	D=M
+	@SP
+	A=M+1
+	A=M
+	M=D
+	@40
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R2
+	D=A
+	@LCL
+	A=M+D
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M-1
+	@SP
+	A=M
+	D=M
+	@SP
+	A=M+1
+	A=M
+	M=D
+	@6
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R3
+	D=A
+	@LCL
+	A=M+D
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M-1
+	@SP
+	A=M
+	D=M
+	@SP
+	A=M+1
+	A=M
+	M=D
+	@123
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@return_address-1
+	D=A
+	@SP
+	A=M
+	M=D // save return-address on the stack
+	@SP
+	M=M+1 // update the stack
+	@LCL
+	D=M
+	@SP
+	A=M
+	M=D // save LCL of the calling function
+	@SP
+	M=M+1
+	@ARG
+	D=M
+	@SP
+	A=M
+	M=D // save ARG of the calling function
+	@SP
+	M=M+1
+	@THIS
+	D=M
+	@SP
+	A=M
+	M=D // save THIS of the calling function
+	@SP
+	M=M+1
+	@THAT
+	D=M
+	@SP
+	A=M
+	M=D // save THAT of the calling function
+	@SP
+	M=M+1
+	@6
+	D=A
+	@SP
+	D=M-D
+	@ARG
+	M=D // Reposition ARG (SP-num_args-5)
+	@SP
+	D=M
+	@LCL
+	M=D // Reposition LCL (LCL = SP)
+	@Sys.add12
+	0;JMP // Transfer control (goto f)
+(return_address-1) // Declare label for the return-address
+	@R0
+	D=A
+	@R5
+	A=A+D
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M-1
+	@SP
+	A=M
+	D=M
+	@SP
+	A=M+1
+	A=M
+	M=D
+	@R0
+	D=A
+	@LCL
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R1
+	D=A
+	@LCL
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R2
+	D=A
+	@LCL
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R3
+	D=A
+	@LCL
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@R4
+	D=A
+	@LCL
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	A=M-1
+	D=M
+	A=A-1
+	M=M+D
+	@SP
+	M=M-1
+	@SP
+	A=M-1
+	D=M
+	A=A-1
+	M=M+D
+	@SP
+	M=M-1
+	@SP
+	A=M-1
+	D=M
+	A=A-1
+	M=M+D
+	@SP
+	M=M-1
+	@SP
+	A=M-1
+	D=M
+	A=A-1
+	M=M+D
+	@SP
+	M=M-1
+	@LCL
+	D=M
+	@R8 // FRAME temp var storing LCL address
+	M=D
+	@5
+	A=D-A // LCL - 5
+	D=M
+	@R9
+	M=D // Return address *(FRAME - 5)
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@ARG
+	A=M
+	M=D // *ARG = pop()
+	@ARG
+	D=M
+	@SP
+	M=D+1 // Restore SP of the caller
+	@R8
+	M=M-1 // FRAME - 1
+	A=M
+	D=M
+	@THAT
+	M=D // Restore THAT of the caller *(FRAME - 1)
+	@R8
+	M=M-1 // FRAME - 2
+	A=M
+	D=M
+	@THIS
+	M=D // Restore THIS of the caller *(FRAME - 2)
+	@R8
+	M=M-1 // FRAME - 3
+	A=M
+	D=M
+	@ARG
+	M=D // Restore THIS of the caller *(FRAME - 3)
+	@R8
+	M=M-1 // FRAME - 4
+	A=M
+	D=M
+	@LCL
+	M=D // Restore THIS of the caller *(FRAME - 4)
+	@R9
+	A=M
+	0;JMP // Goto return-address (in the callers code)
+(Sys.add12) // HANDLING FUNCTION
+	@SP
+	D=M
+	A=D
+	M=0
+	@SP
+	M=D
+	@4002
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THIS
+	M=D
+	@5002
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THAT
+	M=D
+	@R0
+	D=A
+	@ARG
+	A=M+D
+	D=M
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@12
+	D=A
+	@SP
+	A=M
+	M=D
+	@SP
+	M=M+1
+	@SP
+	A=M-1
+	D=M
+	A=A-1
+	M=M+D
+	@SP
+	M=M-1
+	@LCL
+	D=M
+	@R8 // FRAME temp var storing LCL address
+	M=D
+	@5
+	A=D-A // LCL - 5
+	D=M
+	@R9
+	M=D // Return address *(FRAME - 5)
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@ARG
+	A=M
+	M=D // *ARG = pop()
+	@ARG
+	D=M
+	@SP
+	M=D+1 // Restore SP of the caller
+	@R8
+	M=M-1 // FRAME - 1
+	A=M
+	D=M
+	@THAT
+	M=D // Restore THAT of the caller *(FRAME - 1)
+	@R8
+	M=M-1 // FRAME - 2
+	A=M
+	D=M
+	@THIS
+	M=D // Restore THIS of the caller *(FRAME - 2)
+	@R8
+	M=M-1 // FRAME - 3
+	A=M
+	D=M
+	@ARG
+	M=D // Restore THIS of the caller *(FRAME - 3)
+	@R8
+	M=M-1 // FRAME - 4
+	A=M
+	D=M
+	@LCL
+	M=D // Restore THIS of the caller *(FRAME - 4)
+	@R9
+	A=M
+	0;JMP // Goto return-address (in the callers code)
+(END)
+	@END
+	0;JMP
